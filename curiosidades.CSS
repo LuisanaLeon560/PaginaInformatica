@@ -1,0 +1,157 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+header{
+    background-color: rgb(30, 30, 49);
+    color: antiquewhite;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    height: 80px;
+    width: 100%;
+    justify-content: center;
+    position: fixed;
+    top: 0%;
+}
+#logo{
+    font-family: 'Times New Roman', Times, serif;
+}
+a{
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 20px;
+    font-family: monospace;
+    padding: 30px;
+}
+a:hover{
+    text-decoration:underline;
+}
+i{
+    font-size: 25px;
+}
+#presentacion{
+    background-image: url(imgProyecto/luna.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+img {
+    filter: drop-shadow(3px 3px 5px rgb(0, 0, 0));
+    width: 80%;
+    display: block;
+    margin: auto;
+    top: 30px;
+    transition: all 2s;
+}
+img:hover{
+    transform: scale(1.2);
+}
+.curiosidades-planetas{
+    width: 90vw;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.Planetas{
+    width: 300px;
+    border-radius: 0 0 12px 12px;
+    transition: all 2s;
+    box-shadow: 5px 5px 10px;
+    background: linear-gradient(rgb(152, 157, 173), rgb(231, 206, 206))
+}
+.Planetas:hover{
+    transform: scale(1.1);
+}
+figure {
+    width: 100%;
+}
+.texto {
+    padding: 12px 18px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    font-family: monospace;
+    color: rgb(69, 69, 95);
+}
+
+p {
+    padding: 12px 0;
+    line-height: 1.5;
+    font-family:monospace;
+}
+h1{
+    font-family: monospace;
+    font-size: 50px;
+    text-align: center;
+    padding: 30px;
+    text-decoration: underline rgb(157, 157, 175);
+    color: rgb(211, 211, 226);
+    background-color: rgb(56, 60, 65);
+}
+
+h3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+.curiosidades-estrellas{
+    width: 90vw;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.estrellas{
+    width: 300px;
+    border-radius: 0 0 12px 12px;
+    transition: all 2s;
+    box-shadow: 5px 5px 10px;
+    background: linear-gradient(rgb(29, 32, 41), rgb(183, 139, 187))
+}
+.estrellas:hover{
+    transform: scale(1.1);
+}
+figure {
+    width: 100%;
+}
+.curiosidades-agujerosnegros{
+    width: 90vw;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.agujerosnegros{
+    width: 300px;
+    border-radius: 0 0 12px 12px;
+    transition: all 2s;
+    box-shadow: 5px 5px 10px;
+    background: linear-gradient(rgb(13, 16, 24), rgb(50, 27, 68))
+}
+.agujerosnegros:hover{
+    transform: scale(1.1);
+}
+figure {
+    width: 100%;
+}
+footer{
+    background-color: black;
+    color: antiquewhite;
+    height: 40px;
+    text-align: center;
+}

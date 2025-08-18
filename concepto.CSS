@@ -1,0 +1,77 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+header{
+    background-color: rgb(30, 30, 49);
+    color: antiquewhite;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    height: 80px;
+    width: 100%;
+    justify-content: center;
+    position: fixed;
+    top: 0%;
+}
+a{
+    text-decoration: none;
+    color: antiquewhite;
+    font-family:monospace;
+    font-size: 20px;
+    padding: 30px;
+}
+a:hover{
+    text-decoration:underline;
+}
+i{
+    font-size: 25px;
+}
+#presentacion{
+    background-image: url(imgProyecto/luna.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px
+}
+h1{
+    text-align: center;
+    font-family: monospace;
+    padding: 25px;
+    font-size: 40px;
+    background-color: rgb(48, 45, 59);
+    color: rgb(211, 223, 233);
+    text-decoration: underline;
+}
+details{
+    width: 90%;
+    height: 350px;
+    padding: 40px;
+}
+summary{
+    font-size: 30px;
+    font-style: italic;
+    background: linear-gradient(rgb(84, 72, 117), rgb(112, 107, 114));
+}
+dt{
+    font-size: 25px;
+    font-family: monospace;
+    font-style: italic;
+    color: antiquewhite;
+    padding-top: 12px;
+}
+dl{
+    gap: 10px;
+    background: linear-gradient(black, rgba(126, 122, 122, 0.308));
+}
+dd{
+    font-family: monospace;
+    font-size: 20px;
+    color: antiquewhite;
+    padding-top: 12px;
+}
+section{
+    background: url(imgProyecto/agujero-negro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
