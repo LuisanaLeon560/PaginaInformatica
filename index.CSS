@@ -1,0 +1,232 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+header{
+    background-color: rgb(30, 30, 49);
+    color: antiquewhite;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    height: 80px;
+    width: 100%;
+    justify-content: center;
+    position: fixed;
+    top: 0%;
+}
+a{
+    text-decoration: none;
+    color: antiquewhite;
+    font-family:monospace;
+    font-size: 20px;
+    padding: 30px;
+}
+a:hover{
+    text-decoration:underline;
+}
+i{
+    font-size: 25px;
+}
+#presentacion{
+    background-image: url(imgProyecto/luna.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px;
+}
+body{
+    background: linear-gradient(rgb(207, 207, 223), rgba(123, 107, 161, 0.863), white);
+}
+section{
+    padding: 15px;
+    max-width: 1000px;
+    margin: auto;
+   
+}
+h2{
+    padding: 15px;
+    text-decoration:underline;
+    color: rgb(247, 235, 255);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+p{
+    padding: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 2;
+}
+
+
+.Tarjeta:hover {
+    transform: scale(1.1);
+    box-shadow: 3px 9px 10px black;
+}
+
+figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+figure{
+    grid-area: img;
+}
+.noticia-descripcion {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Tarjeta{
+
+    display: grid;
+    grid-template-rows: 20% 15% 55% 10%;
+    grid-template-areas: 
+    "img"
+    "titulo"
+    "texto"
+    "boton";
+    padding: 20px;
+    transition: all 1s;
+}
+.Noticias{
+   
+    width: 90vw;
+    display: flex;
+    margin: auto;
+    gap: 10px;
+  
+   
+}
+
+h3{
+    text-align: center;
+    font-family: monospace;
+    font-size: 20px;
+    grid-area: titulo;
+}
+.texto{
+    grid-area: texto;
+}
+.boton{
+    color: black;
+    background-color: rgb(162, 171, 190);
+    padding: 10px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    grid-area: boton;
+}
+footer{
+    background-color: black;
+    color: antiquewhite;
+    height: 40px;
+    text-align: center;
+}
+
+li{
+    list-style: none;
+}
+ul{
+    display: flex;
+}
+label, #checking{
+    display: none;
+}
+@media(width<768px) {
+
+    ul {
+        flex-direction: column;
+    }
+
+    label {
+        display: block;
+    
+    }
+
+  nav{
+    position: absolute;
+    width: 95%;
+    left: -100%;
+    transition: all 0.5s;
+    background-color: rgb(30, 30, 49);
+    padding-top: 40px;
+    gap: 10px;
+  }
+
+  #checking:checked~nav{left: 0;}
+  section{
+    width: 90vw;
+  }
+  .Noticias{
+    flex-direction: column;
+  }
+  .boton:hover{
+    background-color: rgb(71, 62, 80);
+  }
+
+}
+main{
+    margin-top: 40px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.abrirventana{
+    margin: 15px 0;
+    width: 150px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 15px;
+    border: rgba(255, 255, 255, 0.432) solid;
+    font-family: monospace;
+    font-size: 20px;
+    color: aliceblue;
+    cursor: pointer;
+}
+.ventana1{
+    width: 600px;
+    height: 250px;
+    padding: 20px;
+    justify-content: center;
+    box-shadow: 5px 5px 10px;
+}
+.cerrar{
+    width: 70px;
+    padding: 5px;
+    background-color: rgb(28, 26, 37);
+    color: antiquewhite;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+h4{
+    font-family: monospace;
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    padding: 10px;
+    background:linear-gradient(rgb(65, 65, 87), rgb(226, 224, 255));
+    color: rgb(254, 255, 255);
+}
+.ventanatexto{
+    font-family: monospace;
+    text-align: center;
+}
+.ventana2{
+    width: 600px;
+    height: 250px;
+    padding: 20px;
+    justify-content: center;
+    box-shadow: 5px 5px 10px;
+}
+
+.ventana3{
+    width: 600px;
+    height: 250px;
+    padding: 20px;
+    justify-content: center;
+    box-shadow: 5px 5px 10px;
+}
