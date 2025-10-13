@@ -9,15 +9,16 @@
 </head>
 <body>
     <header>
-        <div>
-            <i class="fa-solid fa-cloud-moon"></i>
-            <p>Bitácora Estelar</p>
-        </div>
+        <label for="checking"></label> <i class="fa-solid fa-cloud-moon"></i></label>
+            <input type="checkbox" id="checking">
+       
         <nav id="Menu">
-            <a href="index.HTML">Inicio</a>
-            <a href="curiosidades.HTML">Curiosidades</a>
-            <a href="conceptos.HTML">Conceptos Basicos</a>
-            <a href="libros.HTML">Libros</a>
+            <ul>
+            <li class="menuitem"><a href="index.HTML">Inicio</a></li>
+            <li class="menuitem"><a href="curiosidades.HTML">Curiosidades</a></li>
+            <li class="menuitem"><a href="conceptos.HTML">Conceptos Basicos</a></li>
+            <li class="menuitem"><a href="libros.HTML">Libros</a></li>
+            </ul>
         </nav>
     </header>
     <nav id="presentacion">
@@ -25,7 +26,7 @@
     <h1>Libros Recomendados</h1>
     <aside>
         <h2>Categorías</h2>
-        <ul>
+        <ul id="categorias">
             <li><a href="#basica">Astronomía Basica</a></li>
             <li><a href="#Intermedia">Astronomía Intermedia</a></li>
             <li><a href="#Avanzada">Astronomía Avanzada</a></li>
@@ -39,21 +40,21 @@
                 <h3>El Universo en una Taza de Cafe</h3>
                 <p>Autor: Jordi Pereyra</p>
                 <p>Este libro ofrece una introducción amena y accesible a los conceptos básicos de la astronomía, ideal para quienes recién comienzan. </p>
-                <a href="#">Más Información</a>
+                <a href="https://www.planetadelibros.com.co/libro-el-universo-en-una-taza-de-cafe/366508">Más Información</a>
             </div>
             <div class="librocard">
                 <img src="imgProyecto/portada2.webp">
                 <h3>El Universo en tu Mano</h3>
                 <p>Autor: Blackie Books</p>
                 <p>Es una obra que combina ciencia y narrativa para llevar a los lectores en un viaje extraordinario por el cosmos.</p>
-                <a href="#">Más Información</a>
+                <a href="https://www.mercadolibre.com.ar/el-universo-en-tu-mano-christophe-galfard/p/MLA21203444">Más Información</a>
             </div>
             <div class="librocard">
                 <img src="imgProyecto/portada3.webp">
                 <h3>Observar el Cielo</h3>
                 <p>Autor: David Levy</p>
                 <p>Un libro práctico que te enseña a identificar constelaciones y cuerpos celestes, perfecto para los aficionados a la observación</p>
-                <a href="#">Más Información</a>
+                <a href="https://listado.mercadolibre.com.ar/observar-el-cielo-david-levy">Más Información</a>
             </div>
         </section>
         <section class="grid-libros">
@@ -63,21 +64,21 @@
                 <h3>La Teoria del Todo</h3>
                 <p>Autor: Stephen Hawking</p>
                 <p>Un libro que explora la teoría del todo y su impacto en el universo</p>
-                <a href="">Más Información</a>
+                <a href="https://www.mercadolibre.com.ar/la-teoria-del-todo-stephen-w-hawking-editorial-debolsillo/p/MLA21056700">Más Información</a>
             </div>
             <div class="librocard">
                 <img src="imgProyecto/portada5.webp">
                 <h3>Astronomía. Guía para principiantes</h3>
                 <p>Autor: Arthwr Bass</p>
                 <p>Aprenderás a leer el cielo nocturno e identificar los principales fenómenos astronómicos de nuestra galaxia. Aprende a mirar el cielo con ojos de experto y descubre su significado.</p>
-                <a href="#">Más Información</a>
+                <a href="https://www.amazon.com/-/es/Astronom%C3%ADa-Gu%C3%ADa-para-principiantes-Spanish/dp/1542881315">Más Información</a>
             </div>
             <div class="librocard">
                 <img src="imgProyecto/portada6.webp">
                 <h3>Guía del cielo 2020</h3>
                 <p>Autor: Pedro y Enrique Velasco</p>
                 <p>Una guía para la observación a simple vista de constelaciones y planetas, luna, eclipses y lluvias de meteoros.</p>
-                <a href="">Más Información</a>
+                <a href="https://www.amazon.es/Gu%C3%ADa-del-cielo-2020-constelaciones/dp/8493853704">Más Información</a>
             </div>
         </section>
         <section class="grid-libros">
@@ -87,26 +88,37 @@
                 <h3>Astrofísica para gente con prisas</h3>
                 <p>Autor:Neil deGrasse Tyson </p>
                 <p>¿Eres bastante impaciente? ¿Quieres introducirte en la astronomía pero de una manera directa y dinámica? Has encontrado, entonces, el libro que estabas buscando.</p>
-                <a href="#">Más Información</a>
+                <a href="https://www.amazon.es/Astrof%C3%ADsica-para-gente-prisas-Divulgaci%C3%B3n/dp/8408247484">Más Información</a>
             </div>
             <div class="librocard">
                 <img src="imgProyecto/portada8.webp">
                 <h3>Orígenes: Catorce mil millones de años de evolución cósmica</h3>
                 <p>Autor: Neil deGrasse Tyson</p>
                 <p> En este libro de astronomía podremos conocer cuál es la historia de la humanidad, del planeta Tierra y de nuestra galaxia.</p>
-                <a href="">Más Información</a>
+                <a href="https://www.amazon.es/Or%C3%ADgenes-Catorce-millones-evoluci%C3%B3n-Contextos/dp/8449330726">Más Información</a>
             </div>
             <div class="librocard">
                 <img src="imgProyecto/portada9.jpg">
                 <h3>El camino a la realidad: Una guía completa de las Leyes del Universo</h3>
                 <p>Autor: Roger Penrose</p>
                 <p> Es una forma de conocer el mundo que nos rodea. De esta manera, podremos conocer nuestra propia naturaleza y de todo nuestro entorno.</p>
-                <a href="">Más Información</a>
+                <a href="https://www.amazon.com/-/es/El-camino-realidad-completa-universo/dp/8483066815">Más Información</a>
             </div>
         </section>
     </main>
     <footer>
         &copy; 2025- Todos los Derechos reservados- Autor León Luisana
     </footer>
+    <script> 
+document.addEventListener('DOMContentLoaded', function () { 
+const checking = document.querySelector("#checking"); 
+const menuitem = document.querySelectorAll(".menuitem"); 
+menuitem.forEach(function (item) { 
+item.addEventListener('click', function () { 
+checking.checked = false; // Desmarca el checkbox 
+}); 
+}); 
+}); 
+</script>
 </body>
 </html>

@@ -13,16 +13,16 @@
 
 <body>
     <header>
-        <div>
-            <i class="fa-solid fa-cloud-moon"></i>
-            <p>Bitácora Estelar</p>
-        </div>
+         <label for="checking"></label> <i class="fa-solid fa-cloud-moon"></i></label>
+            <input type="checkbox" id="checking">
+       
         <nav id="Menu">
-            <a href="index.HTML">Inicio</a>
-            <a href="curiosidades.HTML">Curiosidades</a>
-            <a href="conceptos.HTML">Conceptos Basicos</a>
-            <a href="libros.HTML">Libros</a>
-        </nav>
+            <ul>
+            <li class="menuitem"><a href="index.HTML">Inicio</a></li>
+            <li class="menuitem"><a href="curiosidades.HTML">Curiosidades</a></li>
+            <li class="menuitem"><a href="conceptos.HTML">Conceptos Basicos</a></li>
+            <li class="menuitem"><a href="libros.HTML">Libros</a></li>
+            </ul>
     </header>
     <nav id="presentacion">
     </nav>
@@ -111,6 +111,17 @@
             </dl>
         </details>
     </section>
+    <script> 
+document.addEventListener('DOMContentLoaded', function () { 
+const checking = document.querySelector("#checking"); 
+const menuitem = document.querySelectorAll(".menuitem"); 
+menuitem.forEach(function (item) { 
+item.addEventListener('click', function () { 
+checking.checked = false; // Desmarca el checkbox 
+}); 
+}); 
+}); 
+</script>
 </body>
 
 </html>

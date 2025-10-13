@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto</title>
+    <title>Bitácora Estelar</title>
     <link rel="stylesheet" href="curiosidades.CSS">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
     <header>
-        <div>
-            <i class="fa-solid fa-cloud-moon"></i>
-            <p id="logo">Bitácora Estelar</p>
-        </div>
+        <label for="checking"></label> <i class="fa-solid fa-cloud-moon"></i></label>
+            <input type="checkbox" id="checking">
+       
         <nav id="Menu">
-            <a href="index.HTML">Inicio</a>
-            <a href="curiosidades.HTML">Curiosidades</a>
-            <a href="conceptos.HTML">Conceptos Basicos</a>
-            <a href="libros.HTML">Libros</a>
+            <ul>
+            <li class="menuitem"><a href="index.HTML">Inicio</a></li>
+            <li class="menuitem"><a href="curiosidades.HTML">Curiosidades</a></li>
+            <li class="menuitem"><a href="conceptos.HTML">Conceptos Basicos</a></li>
+            <li class="menuitem"><a href="libros.HTML">Libros</a></li>
+            </ul>
         </nav>
     </header>
     <nav id="presentacion">
@@ -119,5 +120,16 @@
     <footer>
         &copy; 2025- Todos los Drechos reservados- Autor León Luisana
     </footer>
+<script> 
+document.addEventListener('DOMContentLoaded', function () { 
+const checking = document.querySelector("#checking"); 
+const menuitem = document.querySelectorAll(".menuitem"); 
+menuitem.forEach(function (item) { 
+item.addEventListener('click', function () { 
+checking.checked = false; // Desmarca el checkbox 
+}); 
+}); 
+}); 
+</script>
 </body>
 </html>
