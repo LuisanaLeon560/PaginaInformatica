@@ -98,9 +98,9 @@ section{
         background-position: bottom right;
     }
 }
-
-
-
+label, #checking{
+    display: none;
+}
 @media(width<768px) {
 
     ul {
